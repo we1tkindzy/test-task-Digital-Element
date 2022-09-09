@@ -1,0 +1,45 @@
+.interested-work {
+  padding-top: 88px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: -13vw;
+    bottom: 0;
+    width: 116.5%;
+    height: 1px;
+    background-color: rgba($color-default-white, 0.4);
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 100px;
+  }
+
+  &__wrapper {
+    width: 55%;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: $color-default-white;
+    width: 85%;
+    margin-bottom: 34px;
+  }
+
+  &__text {
+    @include default-text;
+    opacity: 0.6;
+  }
+
+  &__button {
+    margin-right: 4px;
+    margin-top: 5px;
+  }
+}

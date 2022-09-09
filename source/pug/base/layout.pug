@@ -1,0 +1,28 @@
+include ../base/mixins
+include ../base/header
+include ../base/modal
+
+block data
+block variables
+
+doctype html
+html(lang='ru')
+  head
+    title= 'test-task — HomePage'
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    <meta name="theme-color" content="#ffffff">
+    link(rel='preload', href='fonts/Galien-Regular.woff2', as='font', crossorigin='anonymous')
+    link(rel='preload', href='fonts/Gilroy-Regular.woff2', as='font', crossorigin='anonymous')
+    link(rel='preload', href='fonts/Gilroy-Semibold.woff2', as='font', crossorigin='anonymous')
+    link(rel='stylesheet', href='css/style.min.css')
+
+  body(class=(isModal ? 'scroll-lock' : ''))
+    +sprite
+    +header
+    block main
+
+    block modals
+
+    script(src='js/vendor.min.js')
+    script(src='js/main.min.js')

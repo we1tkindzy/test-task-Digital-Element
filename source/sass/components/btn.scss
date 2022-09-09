@@ -1,0 +1,29 @@
+.btn {
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+
+  &--icon {
+    display: flex;
+    align-items: center;
+
+    span {
+      font-weight: 600;
+      color: $blue;
+      margin-right: 27px;
+    }
+  }
+
+  &--blue {
+    @include reset-btn;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: $color-default-white;
+    padding: 15px;
+    background: $blue;
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    border-radius: 10px;
+    width: 220px;
+  }
+}

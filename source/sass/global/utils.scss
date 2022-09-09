@@ -1,0 +1,47 @@
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+
+  clip: rect(0 0 0 0);
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: vh(100);
+
+  &--no-scrollbar {
+    height: vh(100);
+
+    @include hidden-scrollbar;
+  }
+
+  .header,
+  .footer {
+    flex-shrink: 0;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+}
+
+.no-valid {
+  border: 1px solid $red !important;
+}
+
+.valid {
+  border: 1px solid inherit;
+}
+
+.scroll-lock {
+  position: fixed;
+  overflow-y: auto;
+}

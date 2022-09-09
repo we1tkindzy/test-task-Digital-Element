@@ -1,0 +1,44 @@
+@mixin retina {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @content;
+  }
+}
+
+@mixin container {
+  @media (max-width: $container + $padding-desktop*2 - 1) {
+    @content;
+  }
+}
+
+@mixin reset-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin reset-btn {
+  cursor: pointer;
+  padding: 0;
+  background-color: $color-transparent;
+  border: none;
+  outline: none;
+}
+
+@mixin default-text {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: $color-default-white;
+}
+
+@mixin hidden-scrollbar {
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: transparent; /* make scrollbar transparent */
+  }
+
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}

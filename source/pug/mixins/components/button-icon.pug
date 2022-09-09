@@ -1,0 +1,5 @@
+mixin button-icon(text, icon)
+  - const {name, width, height, altText} = icon
+  a.btn.btn--icon
+    span #{text}
+    +icon(name, width, height, altText)

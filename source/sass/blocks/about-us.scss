@@ -1,0 +1,80 @@
+.about-us {
+  padding-top: 95px;
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__info {
+    width: 40%;
+    margin-bottom: 64px;
+    margin-right: auto;
+  }
+
+  &__logo {
+    display: flex;
+    margin-bottom: 31px;
+
+    span {
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 46px;
+      letter-spacing: 0.02em;
+      color: $color-default-white;
+      margin-left: 16px;
+    }
+  }
+
+  &__contacts {
+    @include default-text;
+
+    display: flex;
+    width: 100%;
+    margin-bottom: 22px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      @include default-text;
+    }
+
+    span {
+      font-weight: 600;
+
+      @include default-text;
+      margin-right: 20px;
+    }
+  }
+
+  &__list {
+    @include reset-list;
+    margin-right: 77px;
+
+    &:last-child {
+      margin-right: 127px;
+    }
+
+    span {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 0.05em;
+      color: $color-default-white;
+
+      display: block;
+      margin-bottom: 31px;
+    }
+  }
+
+  &__item {
+    @include default-text;
+    margin-bottom: 16px;
+  }
+
+  &__copyright {
+    @include default-text;
+    opacity: 0.4;
+  }
+}

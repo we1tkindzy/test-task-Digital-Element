@@ -1,0 +1,13 @@
+mixin modal-message()
+  .content-block
+    form(action="", method="post").modal-message__form
+      div.modal-message__wrapper
+        label(for="name").modal-message__label Full Name
+        input(type="text", name="name", id="name" placeholder="Your Name", title="Only letters are allowed. At least 6 letters", pattern="[A-Za-zА-Яа-яЁё]{6,}").modal-message__input
+      div.modal-message__wrapper
+        label(for="email").modal-message__label Email
+        input(type="text", name="email", id="email", placeholder="Your Email", title="Must be a mail format. Ex.: qwerty@q2q.com", pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})").modal-message__input
+      div.modal-message__wrapper
+        label(for="user-message").modal-message__label Message
+        textarea(cols="30", rows="5", name="user-message", id="user-message", placeholder="Your Message").modal-message__textarea
+      button(type="submit").btn.btn--blue.modal-message__button SUBMIT

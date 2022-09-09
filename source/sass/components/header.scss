@@ -1,0 +1,14 @@
+.header {
+  .container {
+    width: 100%;
+    max-width: 1200px + $padding-desktop*2;
+    margin: 0 auto;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+  }
+}

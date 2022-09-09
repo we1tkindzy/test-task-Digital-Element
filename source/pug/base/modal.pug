@@ -1,0 +1,11 @@
+mixin modal(targetModal, title=false)
+  .modal.modal--preload(class!=attributes.class, data-target-modal=targetModal)
+    .modal__wrapper
+      .modal__overlay
+      .modal__content
+        button.modal__close-btn.js-close(type='button', aria-label='Закрыть попап')
+          +icon('close', 24, 24)
+        if title
+          p.modal__title.h1 !{title}
+        if block
+          block

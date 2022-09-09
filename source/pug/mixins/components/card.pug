@@ -1,0 +1,15 @@
+mixin card(title, img)
+  - const {path, image, format, width, height, altText} = img
+  div.card
+    div.card__img
+      +img({
+          path: path,
+          image: image,
+          format: format,
+          width: width,
+          height: height,
+          altText: altText,
+        })
+    p.card__title #{title}
+    p.card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    +button-icon('Learn more', {name: 'arrow', width: 16, height: 16, altText: 'Подробнее'})

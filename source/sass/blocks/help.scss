@@ -1,0 +1,18 @@
+.help {
+  padding: 190px 0 200px;
+  margin-bottom: 342px;
+
+  .container {
+    position: relative;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: $color-dark-blue-2;
+    width: 45%;
+    margin-bottom: 156px;
+  }
+}

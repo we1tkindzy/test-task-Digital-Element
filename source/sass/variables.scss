@@ -1,0 +1,35 @@
+// Colors
+//---------------------------------
+
+// Default
+$color-default-black:             #000000;
+$color-default-white:             #ffffff;
+$color-transparent:               rgba(255, 255, 255, 0);
+
+// Base
+$color-dark-blue:                 #1f3f68;
+$blue:                            #5a98d0;
+$color-grey--light:               #f2f2f2;
+$color-dark-blue-2:               #316099;
+$red:                             rgb(255, 0, 0);
+$color-black:                     #282828;
+
+$gradient-blue:                   linear-gradient(0deg, rgba(#98C3E8, 0.2) 8.84%, rgba(152, 195, 232, 0) 31.12%);
+
+// Typography
+//---------------------------------
+$font-family--primary:               "Gilroy", "Helvetica", sans-serif;
+$font-family--secondary:             "Galien", "Arial", sans-serif;
+
+// Animation
+//---------------------------------
+$default-transition-duration:       0.3s;
+$default-transition-function:       ease-in-out;
+$default-transition-settings:       $default-transition-duration $default-transition-function;
+$fast-transition-settings:          0.1s $default-transition-function;
+$modal-transition-settings:         0.6s cubic-bezier(0.55, 0, 0.1, 1);
+
+// Container
+//---------------------------------
+$container:                         942px;
+$padding-desktop:                   40px;

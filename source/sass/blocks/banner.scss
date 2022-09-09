@@ -1,0 +1,33 @@
+.banner {
+  background: $gradient-blue;
+  padding: 44px 0 190px;
+  position: relative;
+
+  &__title {
+    font-family: $font-family--secondary;
+    font-size: 64px;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    color: $color-dark-blue;
+    width: 59%;
+    margin-bottom: 41px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: $color-dark-blue;
+    opacity: 0.6;
+    width: 47%;
+    margin-bottom: 75px;
+  }
+
+  &__img {
+    position: absolute;
+    top: -46px;
+    right: 23px;
+    max-width: 688px;
+    max-height: 624px;
+  }
+}
